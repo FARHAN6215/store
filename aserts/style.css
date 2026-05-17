@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    gap: 10px;
+}
+
+.navbar div{
+    font-size: 18px;
+}
+
+/* HERO IMAGE */
+
+.carosal{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADINGS */
+
+.i,
+.sho,
+.d,
+.r{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.h{
+    width: 80%;
+    margin: auto;
+    border: 2px solid black;
+}
+
+/* CARD SECTIONS */
+
+.cards,
+.outfit,
+.walet{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* CARD */
+
+.card{
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+.priducer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar div{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 90% !important;
+    }
+
+    .i,
+    .sho,
+    .d,
+    .r{
+        font-size: 24px;
+    }
+
+    .priducer h1{
+        font-size: 20px;
+    }
+}
